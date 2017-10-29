@@ -1,7 +1,9 @@
 1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
-    "option_gameguid": "e695bf5a-250e-4208-9899-095d727b3e00",
-    "option_lastchanged": "26 October 2017 23:29:27",
-    "option_game_speed": 60
+    "option_gameguid": "049cf9e9-d3bd-4421-942b-81da26ca0149",
+    "option_lastchanged": "29 October 2017 22:56:16",
+    "option_game_speed": 60,
+    "option_author": "Nuclear_problems",
+    "option_sci_usesci": true
 }←7fa50043-cea6-4cd0-9521-a8ba8c6ea9f0|{
     "audioGroups": {
         "Additions": [
