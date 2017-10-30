@@ -1,4 +1,4 @@
-      /// Step event
+/// Step event
 
 #region Activate Waves
 if(keyboard_check_pressed(vk_space)) && (active = 0) {
@@ -131,5 +131,11 @@ if(instance_exists(selected)) {
 			}
 		}
 	}
+}
+#endregion
+
+#region Player's Damage
+if(damage > 25) {
+room_restart();
 }
 #endregion

@@ -1,7 +1,7 @@
 /// Create Event 
 // Initialize
-instance_create_layer(0,30,"GUI",oMusVolume);
-instance_create_layer(66,30,"GUI",oSndVolume);
+instance_create_layer(10,30,"GUI",oMusVolume);
+instance_create_layer(76,30,"GUI",oSndVolume);
 audio_group_load(audiogroup_music);
 alarm[0]=1;
 soundtrack = musNull;

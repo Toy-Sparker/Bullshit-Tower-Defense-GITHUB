@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Player presses R, It Restarts
 room_restart();

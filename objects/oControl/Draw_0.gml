@@ -1,3 +1,26 @@
+/// Draw GUI
+// UI
+
+draw_set_font(Font0);
+var musicplaying = "";
+
+#region Check soundtrack list
+switch(soundtrack) {
+
+// None
+case (musNull) : musicplaying = "None"; break;
+
+// Soundtrack 01 - Target Spotted
+case (musTargetSpotted) : musicplaying = "Target Spotted"; break;
+ 
+// Soundtrack 02 - Defending
+case (musDefending) : musicplaying = "Defending"; break;
+
+// Soundtrack 03 - Craptastic
+case (musCraptastic) : musicplaying = "Craptastic"; break;
+
+}
+#endregion
 
 #region Draw Selection
 #region Draw UI 
@@ -68,4 +91,52 @@ draw_set_halign(fa_left);
 draw_text_transformed(mouse_x,mouse_y + 6,"MX: " + string(mouse_x),0.2,0.2,0);
 draw_text_transformed(mouse_x,mouse_y - 6,"MY: " + string(mouse_y),0.2,0.2,0);
 */
+#endregion
+
+#region Draw Tower List
+if(towerlist = 1) {
+draw_sprite_ext(sPixel,0,276,0,room_width,room_height,0,c_black,0.33);
+//Brent
+draw_set_alpha(0.5);
+draw_sprite(sTowerBrentU0,0,298,6);
+draw_set_alpha(1);
+draw_set_halign(fa_middle);
+draw_text_transformed(298,14,"Brent\nPortal Power: 5",0.2,0.2,0);
+//Bradley
+draw_set_alpha(0.5);
+draw_sprite(sTowerBradleyU0,0,298,34);
+draw_set_alpha(1);
+draw_set_halign(fa_middle);
+draw_text_transformed(298,42,"Bradley\nPortal Power: 10",0.2,0.2,0);
+draw_set_halign(fa_left);
+}
+#endregion
+
+#region Draw Currency & Damage
+draw_set_halign(fa_right);
+draw_text_transformed(256,0,"Portal Power: " + string(ppower),0.25,0.25,0);
+draw_text_transformed(256,6,"Damage (HP): " + string(damage),0.25,0.25,0);
+draw_set_halign(fa_left);
+#endregion
+
+#region Draw Time
+draw_text_transformed(0,2,"Wave Time: " + string(wtime),0.25,0.25,0);
+#endregion
+
+#region Sound Menu
+if(sndmenu = 1) {
+towerlist = 0;
+draw_sprite_ext(sPixel,0,0,0,room_width,room_height,0,c_black,0.5);
+draw_text_transformed(0,30,"Sound Menu",0.25,0.25,0);
+draw_text_transformed(0,60,"None",0.25,0.25,0);
+draw_text_transformed(0,90,"Target Spotted",0.25,0.25,0);
+draw_text_transformed(0,120,"Defending",0.25,0.25,0);
+draw_text_transformed(0,10,"Craptastic",0.25,0.25,0);
+draw_text_transformed(0,60,"Music Volume: " + string(musvolume),0.25,0.25,0);
+draw_sprite_ext(sPixel,0,0,27,0.62,0.1,0,c_white,0.1);
+draw_text_transformed(210,60,"SFX Volume: " + string(sndvolume),0.25,0.25,0);
+draw_sprite_ext(sPixel,0,180,27,0.62,0.1,0,c_white,0.1);
+} else {
+draw_text_transformed(0,30,"Music: " + string(musicplaying),0.25,0.25,0);
+}
 #endregion
