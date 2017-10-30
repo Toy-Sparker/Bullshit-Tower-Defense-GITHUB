@@ -23,7 +23,7 @@ case (musCraptastic) : musicplaying = "Craptastic"; break;
 #endregion
 
 #region Draw Selection
-#region Draw UI 
+#region Draw Bottom UI 
 if(instance_exists(selected)) {
 if(selected != noone) {
 draw_set_alpha(0.25);
@@ -44,14 +44,14 @@ draw_set_alpha(1);
 if((selected).towertype = "BrentU0") {
 draw_sprite_ext(sPixel,0,80,220,1.5,0.12,0,c_black,0.33);
 draw_text_transformed(80,220,"Upgrade 1: 'Online Guide'",0.33,0.33,0);
-draw_text_transformed(80,230,"Brent searches up an online guide for further range and a small increase in speed.",0.25,0.25,0);
+draw_text_transformed(80,230,"Brent searches up an online guide for further range and a\nsmall increase in speed.",0.25,0.25,0);
 draw_sprite_ext(sBdisplay0,0,40,240,0.22,0.22,0,c_white,0.5);
 }
 //Brent U1
 if((selected).towertype = "BrentU1") { 
 draw_sprite_ext(sPixel,0,80,220,1.6,0.12,0,c_black,0.33);
 draw_text_transformed(80,220,"Upgrade 2: 'Improve on C#'",0.33,0.33,0);
-draw_text_transformed(80,230,"Brent spends hours on improving his C#, giving him and his projectile more speed.",0.25,0.25,0);
+draw_text_transformed(80,230,"Brent spends hours on improving his C#, giving him and his\nprojectile more speed.",0.25,0.25,0);
 draw_sprite_ext(sBdisplay1,0,40,240,0.22,0.22,0,c_white,0.5);
 }
 //Brent U2
@@ -66,7 +66,7 @@ draw_sprite_ext(sBdisplay2,0,40,240,0.22,0.22,0,c_white,0.5);
 if((selected).towertype = "BradleyU0") {
 draw_sprite_ext(sPixel,0,80,220,1.5,0.12,0,c_black,0.33);
 draw_text_transformed(80,220,"Upgrade 1: 'YTP'",0.33,0.33,0);
-draw_text_transformed(80,230,"Bradley watches a YTP... But he does get hyper from it and has a trinkle in speed",0.25,0.25,0);
+draw_text_transformed(80,230,"Bradley watches a YTP... But he does get hyper from it and\nhas a trinkle in speed",0.25,0.25,0);
 draw_sprite_ext(sBdlydisplay0,0,40,240,0.22,0.22,0,c_white,0.5);
 }
 #endregion
@@ -114,8 +114,8 @@ draw_set_halign(fa_left);
 
 #region Draw Currency & Damage
 draw_set_halign(fa_right);
-draw_text_transformed(256,0,"Portal Power: " + string(ppower),0.25,0.25,0);
-draw_text_transformed(256,6,"Damage (HP): " + string(damage),0.25,0.25,0);
+draw_text_transformed(276,0,"Portal Power: " + string(ppower),0.25,0.25,0);
+draw_text_transformed(276,6,"Damage (HP): " + string(damage),0.25,0.25,0);
 draw_set_halign(fa_left);
 #endregion
 
@@ -127,15 +127,16 @@ draw_text_transformed(0,2,"Wave Time: " + string(wtime),0.25,0.25,0);
 if(sndmenu = 1) {
 towerlist = 0;
 draw_sprite_ext(sPixel,0,0,0,room_width,room_height,0,c_black,0.5);
-draw_text_transformed(0,30,"Sound Menu",0.25,0.25,0);
-draw_text_transformed(0,60,"None",0.25,0.25,0);
-draw_text_transformed(0,90,"Target Spotted",0.25,0.25,0);
-draw_text_transformed(0,120,"Defending",0.25,0.25,0);
-draw_text_transformed(0,10,"Craptastic",0.25,0.25,0);
-draw_text_transformed(0,60,"Music Volume: " + string(musvolume),0.25,0.25,0);
-draw_sprite_ext(sPixel,0,0,27,0.62,0.1,0,c_white,0.1);
-draw_text_transformed(210,60,"SFX Volume: " + string(sndvolume),0.25,0.25,0);
-draw_sprite_ext(sPixel,0,180,27,0.62,0.1,0,c_white,0.1);
+draw_text_transformed(0,18,"Music Volume: " + string(musvolume),0.25,0.25,0);
+draw_sprite_ext(sPixel,0,0,24,0.62,0.1,0,c_white,0.1);
+draw_text_transformed(120,18,"SFX Volume: " + string(sndvolume),0.25,0.25,0);
+draw_sprite_ext(sPixel,0,120,24,0.62,0.1,0,c_white,0.1);
+draw_text_transformed(0,12,"Sound Menu",0.25,0.25,0);
+draw_text_transformed(0,38,"None",0.25,0.25,0);
+draw_text_transformed(0,48,"Target Spotted",0.25,0.25,0);
+draw_text_transformed(0,58,"Defending",0.25,0.25,0);
+draw_text_transformed(0,68,"Craptastic",0.25,0.25,0);
+
 } else {
 draw_text_transformed(0,30,"Music: " + string(musicplaying),0.25,0.25,0);
 }
