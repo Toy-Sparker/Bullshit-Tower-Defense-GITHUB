@@ -20,6 +20,7 @@ musvolume = oMusVolume.x;
 sndvolume_min = 0
 sndvolume_max = 1
 sndvolume = oSndVolume.x;
+damage = 0;
 
 //Stands for Upgrade De-bug
 udb = 0;
