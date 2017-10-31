@@ -1,0 +1,2 @@
+///@description Select Tower
+scrTowerSelected();

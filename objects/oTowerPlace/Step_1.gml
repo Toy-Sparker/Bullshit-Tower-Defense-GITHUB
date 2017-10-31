@@ -4,12 +4,14 @@
 
 //Brent
 if(tower = oTowerBrentU0) {
+pay = 5;
 image_alpha = 0.5;
 sprite_index = sTowerBrentU0;
 }
 
 //Bradley
 if(tower = oTowerBradleyU0) {
+pay = 5;
 image_alpha = 0.5;
 sprite_index = sTowerBradleyU0;
 }

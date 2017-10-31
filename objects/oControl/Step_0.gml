@@ -103,10 +103,10 @@ if(instance_exists(selected)) {
 //Brent Upgrade 1
 		if((selected).towertype = "BrentU0") && (udb < 1) {
 			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) {	
-				if(ppower >= 5) {
+				if(ppower >= 10) {
 				udb = 10;
 				audio_play_sound(sndUpgrade0,0,0);	
-				ppower -= 5;
+				ppower -= 10;
 					with(selected) {
 					scrTowerUpgrade();
 					}
@@ -117,6 +117,21 @@ if(instance_exists(selected)) {
 		}
 //Brent Upgrade 2
 		if((selected).towertype = "BrentU1") && (udb < 1) {
+			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) {	
+				if(ppower >= 15) {
+				udb = 10;
+				audio_play_sound(sndUpgrade0,0,0);	
+				ppower -= 15;
+					with(selected) {
+					scrTowerUpgrade();
+					}
+				} else {
+				audio_play_sound(sndCancel0,0,0);
+				}
+			}
+		}
+//Bradley Upgrade 1
+		if((selected).towertype = "BradleyU0") && (udb < 1) {
 			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) {	
 				if(ppower >= 15) {
 				udb = 10;

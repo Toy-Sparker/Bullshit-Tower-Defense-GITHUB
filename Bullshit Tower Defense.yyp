@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "3a8f9e23-f74e-4ab1-b091-d5546c8eb8f6",
+            "Value": {
+                "id": "5e009696-dd6e-44c1-928a-3ae3323b93c6",
+                "resourcePath": "scripts\\scrTowerBradleyU1_idle\\scrTowerBradleyU1_idle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "412997b1-74ee-41f0-b383-2388fa550559",
             "Value": {
                 "id": "f97840ef-b5ec-480e-898b-55851ef77deb",
@@ -276,6 +284,14 @@
                 "id": "db9393a3-bb0e-40eb-85e3-f8c184952c40",
                 "resourcePath": "views\\4e46e8a4-c919-4b1e-a3fd-6320354b44d2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4f707896-7051-4afd-9a41-14221464421f",
+            "Value": {
+                "id": "a86106b3-c87f-4b35-af27-166fe8f2e618",
+                "resourcePath": "scripts\\scrTowerBradleyU1_check\\scrTowerBradleyU1_check.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -487,6 +503,14 @@
             }
         },
         {
+            "Key": "8bd71d53-f137-40d8-b78f-1489386be20c",
+            "Value": {
+                "id": "c1048f1f-68fc-41dc-8c7e-b78a2aa922d8",
+                "resourcePath": "scripts\\scrTowerBradleyU1_attack\\scrTowerBradleyU1_attack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8bffa0cd-58dc-4217-97a6-8fd755a00655",
             "Value": {
                 "id": "9b68390d-856f-43b7-94f5-816ae1f75004",
@@ -596,6 +620,14 @@
                 "id": "c9bc70fa-6403-4bb9-8516-4f6170343807",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a9ee7f4c-130d-42b9-b4df-0091fd7602ce",
+            "Value": {
+                "id": "7ba719d8-6760-4cb2-a367-23f452dca5fb",
+                "resourcePath": "views\\a9ee7f4c-130d-42b9-b4df-0091fd7602ce.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -831,6 +863,22 @@
             }
         },
         {
+            "Key": "e95f7749-1638-4e29-9232-595684b9f137",
+            "Value": {
+                "id": "89c43d78-270d-4e2a-9426-ce3084088617",
+                "resourcePath": "objects\\oTowerBradleyU1\\oTowerBradleyU1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "eb34c884-383b-4d71-986f-f3d29361a6b5",
+            "Value": {
+                "id": "7c0a8d6d-1a60-41f8-a8a2-8c9bcad98424",
+                "resourcePath": "sprites\\sTowerBradleyU1\\sTowerBradleyU1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f02b895d-9624-4177-89ba-c4517b26ada4",
             "Value": {
                 "id": "4f5e8269-f223-4741-8780-fa0a477b1411",
@@ -895,6 +943,9 @@
         "8022213c-6b62-4b1f-ac47-5005e9f5c5e2",
         "677e8c9c-ff73-4d23-ba47-aa07b10c76e4",
         "936e2636-76d3-4d29-80aa-03c4238a8f46",
+        "3a8f9e23-f74e-4ab1-b091-d5546c8eb8f6",
+        "8bd71d53-f137-40d8-b78f-1489386be20c",
+        "4f707896-7051-4afd-9a41-14221464421f",
         "c1fa3484-3b2b-44ad-885a-c49d4649a4bf"
     ],
     "tutorial": ""

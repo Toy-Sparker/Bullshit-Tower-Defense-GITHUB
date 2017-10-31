@@ -26,10 +26,6 @@ case (musCraptastic) : musicplaying = "Craptastic"; break;
 #region Draw Bottom UI 
 if(instance_exists(selected)) {
 if(selected != noone) {
-draw_set_alpha(0.25);
-draw_set_color(c_black);
-draw_circle((selected).x,(selected).y,(selected).range, 0);
-draw_set_alpha(1);
 draw_set_color(c_white);
 draw_set_font(Font0);
 draw_set_halign(fa_middle);
@@ -37,6 +33,13 @@ draw_text_transformed(40,192,(selected).towername,0.25,0.25,0);
 draw_set_halign(fa_left);
 draw_sprite_ext(sPixel,0,0,192,320,240,0,c_black,0.33);
 draw_set_alpha(1);
+#region Draw Tower Range
+draw_set_alpha(0.25);
+draw_set_color(c_black);
+draw_circle((selected).x,(selected).y,(selected).range, 0);
+draw_set_color(c_white);
+draw_set_alpha(1);
+#endregion
 #endregion
 #region Draw Tower Upgrade & Display UI
 #region Brent Upgrades & Displays
@@ -63,10 +66,18 @@ draw_sprite_ext(sBdisplay2,0,40,240,0.22,0.22,0,c_white,0.5);
 }
 #endregion
 #region Bradley Upgrades & Displays
+//Bradley U0
 if((selected).towertype = "BradleyU0") {
 draw_sprite_ext(sPixel,0,80,220,1.5,0.12,0,c_black,0.33);
 draw_text_transformed(80,220,"Upgrade 1: 'YTP'",0.33,0.33,0);
 draw_text_transformed(80,230,"Bradley watches a YTP... But he does get hyper from it and\nhas a trinkle in speed",0.25,0.25,0);
+draw_sprite_ext(sBdlydisplay0,0,40,240,0.22,0.22,0,c_white,0.5);
+}
+//Bradley U1
+if((selected).towertype = "BradleyU1") {
+draw_sprite_ext(sPixel,0,80,220,1.5,0.12,0,c_black,0.33);
+draw_text_transformed(80,220,"Upgrade 2: 'Benelli M4 Super 90'",0.33,0.33,0);
+draw_text_transformed(80,230,"Bradley gets a Combat Shotgun, I think it's better?",0.25,0.25,0);
 draw_sprite_ext(sBdlydisplay0,0,40,240,0.22,0.22,0,c_white,0.5);
 }
 #endregion

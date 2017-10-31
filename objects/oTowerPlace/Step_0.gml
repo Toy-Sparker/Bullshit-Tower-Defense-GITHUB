@@ -8,9 +8,9 @@ y = mouse_y
 	if(mouse_check_button_released(mb_left)) && (image_blend = c_red) {
 	audio_play_sound(sndCancel0,0,0);
 	if(tower = oTowerBrentU0) {
-	oControl.ppower += 5;
+	oControl.ppower += pay;
 	} else if(tower = oTowerBradleyU0) {
-	oControl.ppower += 10;	
+	oControl.ppower += pay;	
 	}
 	instance_destroy();	
 	} else
