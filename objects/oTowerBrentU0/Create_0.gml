@@ -2,7 +2,7 @@
 event_inherited();
 state = "choose";
 atkspd = 0.4;
-range = 32;
+range = 24;
 target = noone;
 towername = "Brent";
 towertype = "BrentU0";

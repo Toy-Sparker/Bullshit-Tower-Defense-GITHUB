@@ -62,7 +62,7 @@ if(sndmenu = 1) {
 #endregion
 
 #region Tower List
-if(keyboard_check_pressed(ord("T"))) {
+if(keyboard_check_pressed(ord("T"))) && (sndmenu  = 0) {
 towerlist++;
 if(towerlist > 1) towerlist = 0; 
 } else if(sndmenu = 1) {	

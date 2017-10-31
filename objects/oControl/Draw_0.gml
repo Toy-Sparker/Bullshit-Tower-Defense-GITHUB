@@ -113,7 +113,7 @@ draw_set_halign(fa_left);
 #endregion
 
 #region Draw Currency & Damage
-draw_set_halign(fa_right);
+draw_set_halign(fa_right); 
 draw_text_transformed(276,0,"Portal Power: " + string(ppower),0.25,0.25,0);
 draw_text_transformed(276,6,"Damage (HP): " + string(damage),0.25,0.25,0);
 draw_set_halign(fa_left);
@@ -126,18 +126,18 @@ draw_text_transformed(0,2,"Wave Time: " + string(wtime),0.25,0.25,0);
 #region Sound Menu
 if(sndmenu = 1) {
 towerlist = 0;
-draw_sprite_ext(sPixel,0,0,0,room_width,room_height,0,c_black,0.5);
+draw_sprite_ext(s1Pixel,0,0,0,room_width,room_height,0,c_black,0.5);
 draw_text_transformed(0,18,"Music Volume: " + string(musvolume),0.25,0.25,0);
-draw_sprite_ext(sPixel,0,0,24,0.62,0.1,0,c_white,0.1);
-draw_text_transformed(120,18,"SFX Volume: " + string(sndvolume),0.25,0.25,0);
-draw_sprite_ext(sPixel,0,120,24,0.62,0.1,0,c_white,0.1);
-draw_text_transformed(0,12,"Sound Menu",0.25,0.25,0);
-draw_text_transformed(0,38,"None",0.25,0.25,0);
-draw_text_transformed(0,48,"Target Spotted",0.25,0.25,0);
-draw_text_transformed(0,58,"Defending",0.25,0.25,0);
-draw_text_transformed(0,68,"Craptastic",0.25,0.25,0);
+draw_sprite_ext(s1Pixel,0,0,27,40,6,0,c_white,0.1);
+draw_text_transformed(66,18,"SFX Volume: " + string(sndvolume),0.25,0.25,0);
+draw_sprite_ext(s1Pixel,0,66,27,40,6,0,c_white,0.1);
+draw_text_transformed(0,8,"Sound Menu",0.4,0.4,0);
+draw_text_transformed(0,36,"None",0.33,0.33,0);
+draw_text_transformed(0,46,"Target Spotted",0.33,0.33,0);
+draw_text_transformed(0,56,"Defending",0.33,0.33,0);
+draw_text_transformed(0,66,"Craptastic",0.33,0.33,0);
 
 } else {
-draw_text_transformed(0,30,"Music: " + string(musicplaying),0.25,0.25,0);
+draw_text_transformed(0,8,"Music: " + string(musicplaying),0.25,0.25,0);
 }
 #endregion
