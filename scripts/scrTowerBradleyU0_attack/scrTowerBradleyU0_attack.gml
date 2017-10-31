@@ -6,10 +6,11 @@
 		if(image_index > 6) {
 			audio_play_sound(sndShotgun0,0,0);
 			#region Create Bullets
-			var lendiry = lengthdir_y(2,direction);
-			var bullet1 = instance_create_layer(x,y + lendiry,"Projectiles",oBullet0);
-			var bullet2 = instance_create_layer(x,y + lendiry,"Projectiles",oBullet0);
-			var bullet3 = instance_create_layer(x,y + lendiry,"Projectiles",oBullet0);	
+			var lendirx = lengthdir_x(4,direction);
+			var lendiry = lengthdir_y(4,direction);
+			var bullet1 = instance_create_layer(x + lendirx,y - lendiry,"Projectiles",oBullet0);
+			var bullet2 = instance_create_layer(x + lendirx,y - lendiry,"Projectiles",oBullet0);
+			var bullet3 = instance_create_layer(x + lendirx,y - lendiry,"Projectiles",oBullet0);	
 			#region Configure Bullets
 			with(bullet1)
 			{
