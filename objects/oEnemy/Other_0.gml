@@ -1,1 +1,4 @@
-if(sdb == 60) && (speed == 0) instance_destroy();
+if(sdb == 60) && (speed == 0) {
+oControl.damage++;
+instance_destroy();
+}
