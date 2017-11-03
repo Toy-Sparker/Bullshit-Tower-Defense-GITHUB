@@ -863,6 +863,14 @@
             }
         },
         {
+            "Key": "e5e7d7ed-642c-4acb-a360-0de8dc8bad0c",
+            "Value": {
+                "id": "4487fb26-7a8f-46c5-94cf-f80ee7a14d42",
+                "resourcePath": "sounds\\musShotgunsSwords\\musShotgunsSwords.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e95f7749-1638-4e29-9232-595684b9f137",
             "Value": {
                 "id": "89c43d78-270d-4e2a-9426-ce3084088617",

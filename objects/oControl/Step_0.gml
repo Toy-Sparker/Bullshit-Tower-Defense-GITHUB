@@ -46,16 +46,22 @@ if(sndmenu = 1) {
 	soundtrack = musTargetSpotted;
 	}
 	// Player chose soundtrack 02 - Defending
-	if(mouse_check_button_pressed(mb_left)) && (point_in_rectangle(mouse_x,mouse_y,0,58,30,62))
+	if(mouse_check_button_pressed(mb_left)) && (point_in_rectangle(mouse_x,mouse_y,0,57,30,62))
 	{
 	alarm[0]=1;
 	soundtrack = musDefending;
 	}
 	// Player chose soundtrack 03 - Craptastic
-	if(mouse_check_button_pressed(mb_left)) && (point_in_rectangle(mouse_x,mouse_y,0,66,32,71))
+	if(mouse_check_button_pressed(mb_left)) && (point_in_rectangle(mouse_x,mouse_y,0,67,32,72))
 	{
 	alarm[0]=1;
 	soundtrack = musCraptastic;
+	}
+	// Player chose soundtrack 04 - Shotguns and Swords
+	if(mouse_check_button_pressed(mb_left)) && (point_in_rectangle(mouse_x,mouse_y,0,77,68,82))
+	{
+	alarm[0]=1;
+	soundtrack = musShotgunsSwords;
 	}
 	#endregion
 }

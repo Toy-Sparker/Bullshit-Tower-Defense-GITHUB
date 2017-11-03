@@ -147,7 +147,7 @@ draw_text_transformed(0,36,"None",0.33,0.33,0);
 draw_text_transformed(0,46,"Target Spotted",0.33,0.33,0);
 draw_text_transformed(0,56,"Defending",0.33,0.33,0);
 draw_text_transformed(0,66,"Craptastic",0.33,0.33,0);
-
+draw_text_transformed(0,76,"Shotguns and Swords",0.33,0.33,0);
 } else {
 draw_text_transformed(0,8,"Music: " + string(musicplaying),0.25,0.25,0);
 }
