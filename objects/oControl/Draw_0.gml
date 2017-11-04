@@ -33,6 +33,7 @@ draw_text_transformed(40,192,(selected).towername,0.25,0.25,0);
 draw_set_halign(fa_left);
 draw_sprite_ext(sPixel,0,0,192,320,240,0,c_black,0.33);
 draw_set_alpha(1);
+draw_text_transformed(80,200,"Current Thought: " + string((selected).thghtstr),0.25,0.25,0);
 #region Draw Tower Range
 draw_set_alpha(0.25);
 draw_set_color(c_black);
@@ -79,6 +80,13 @@ draw_sprite_ext(sPixel,0,80,220,1.5,0.12,0,c_black,0.33);
 draw_text_transformed(80,220,"Upgrade 2: 'Benelli M4 Super 90'",0.33,0.33,0);
 draw_text_transformed(80,230,"Bradley gets a Combat Shotgun, I think it's better?",0.25,0.25,0);
 draw_sprite_ext(sBdlydisplay0,0,40,240,0.22,0.22,0,c_white,0.5);
+}
+#endregion
+#region Octo Displays
+//Octo U0
+if((selected).towertype = "OctoU0") {
+draw_text_transformed(80,230,"Gentleman Octopus can toss his tophat like a boomerang.",0.25,0.25,0);
+draw_sprite_ext(sOctodisplay0,0,40,240,0.22,0.22,0,c_white,0.5);
 }
 #endregion
 }

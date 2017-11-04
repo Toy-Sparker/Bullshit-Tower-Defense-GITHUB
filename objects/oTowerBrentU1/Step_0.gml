@@ -1,4 +1,6 @@
 /// Step Event
+event_inherited(); 
+
 // Set direction to Image angle.
 image_angle = direction;
 

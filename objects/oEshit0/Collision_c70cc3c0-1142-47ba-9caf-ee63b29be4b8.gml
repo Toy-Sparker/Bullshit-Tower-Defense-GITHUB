@@ -1,6 +1,6 @@
 ///Step event
 event_inherited();
-s -= 0.01;
+s -= 0.005;
 spd += 0.05;
 
 if(hp <= 0) {

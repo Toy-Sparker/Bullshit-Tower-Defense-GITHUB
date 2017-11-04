@@ -6,5 +6,7 @@ range = 24;
 target = noone;
 towername = "Brent";
 towertype = "BrentU0";
+thought = irandom_range(1,33);
+thghtstr = "";
 upgrade = oTowerBrentU1;
 image_speed = 0;

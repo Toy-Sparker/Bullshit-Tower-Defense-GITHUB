@@ -75,37 +75,56 @@ if(towerlist > 1) towerlist = 0;
 }
 
 if(towerlist = 1) {
+		//Secret - Octo
+		if(keyboard_check(ord("G"))) {
+			if(keyboard_check(ord("O"))) {
+				if(mouse_check_button_pressed(mb_left)) && (!instance_exists(oTowerOctoU0)) {
+					if(ppower >= 30) {
+					ppower -= 30;
+					audio_play_sound(sndTowerSelect,0,false);
+					var place = instance_create_layer(0,0,"Towers",oTowerPlace);
+						with(place)
+						{
+						tower = oTowerOctoU0;
+						}
+					} else {
+					audio_play_sound(sndCancel0,0,false);
+					}
+					}
+				}
+			}
+		}
 		//Brent
 		if(mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,292,6,304,14) && (!instance_exists(oTowerPlace)) {
-		if(ppower >= 5) {
-		ppower -= 5;
-		audio_play_sound(sndTowerSelect,0,false)
-		var place = instance_create_layer(0,0,"Towers",oTowerPlace);
-			with(place)
-			{
-			tower = oTowerBrentU0;
+			if(ppower >= 5) {
+			ppower -= 5;
+			audio_play_sound(sndTowerSelect,0,false);
+			var place = instance_create_layer(0,0,"Towers",oTowerPlace);
+				with(place)
+				{
+				tower = oTowerBrentU0;
+				}
 			}
 		}
-	}
 	//Bradley
-	if(mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,292,34,306,45) && (!instance_exists(oTowerPlace)) {
-		if(ppower >= 10) {
-		ppower -= 10;
-		audio_play_sound(sndTowerSelect,0,false)
-		var place = instance_create_layer(0,0,"Towers",oTowerPlace);
-			with(place)
-			{
-			tower = oTowerBradleyU0;
+		if(mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,292,34,306,45) && (!instance_exists(oTowerPlace)) {
+			if(ppower >= 10) {
+			ppower -= 10;
+			audio_play_sound(sndTowerSelect,0,false)
+			var place = instance_create_layer(0,0,"Towers",oTowerPlace);
+				with(place)
+				{
+				tower = oTowerBradleyU0;
+				}
 			}
 		}
-	}
-}
 #endregion
 
-#region Upgrades
+#region Upgrades & Tower UI
 if(instance_exists(selected)) {
 	if(udb > 0) udb--;
 	if(selected != noone) {
+#region Brent Upgrades
 //Brent Upgrade 1
 		if((selected).towertype = "BrentU0") && (udb < 1) {
 			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) {	
@@ -136,6 +155,8 @@ if(instance_exists(selected)) {
 				}
 			}
 		}
+#endregion
+#region Bradley Upgrades
 //Bradley Upgrade 1
 		if((selected).towertype = "BradleyU0") && (udb < 1) {
 			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) {	
@@ -151,6 +172,13 @@ if(instance_exists(selected)) {
 				}
 			}
 		}
+#endregion
+#region Octo
+//Octo UI
+		if((selected).towertype = "OctoU0")
+			{
+			}
+#endregion
 	}
 }
 #endregion

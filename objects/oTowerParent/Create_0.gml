@@ -1,4 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Parent's Create Event
 //Stands for "Collide De-Bug"
 cdb = 8;
+
+//Stands for "Thought Chance"
+tc = 0;
