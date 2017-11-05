@@ -4,14 +4,17 @@ event_inherited();
 // Set direction to Image angle.
 image_angle = direction;
 
+//Set Distance
+dis = distance_to_object(oEnemy);
+
 #region Tower Brent's States
 if(instance_exists(oEnemy)) {
-	if(distance_to_object(oEnemy)<=range) {
+	if(dis<=range) {
 		// Start Attacking
 		scrTowerBrtU0_check();
 		state = "attack";
 		}
-	if(distance_to_object(oEnemy)>range) {
+	if(dis>range) {
 		// Start Idling
 		scrTowerBrtU0_check();
 		state = "idle"; 	

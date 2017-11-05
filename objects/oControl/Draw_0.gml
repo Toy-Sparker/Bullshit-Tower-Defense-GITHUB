@@ -19,6 +19,9 @@ case (musDefending) : musicplaying = "Defending"; break;
 // Soundtrack 03 - Craptastic
 case (musCraptastic) : musicplaying = "Craptastic"; break;
 
+// Soundtrack 04 - Shotguns & Swords
+case (musShotgunsSwords) : musicplaying = "Shotguns & Swords"; break;
+
 }
 #endregion
 
@@ -89,6 +92,15 @@ draw_text_transformed(80,230,"Gentleman Octopus can toss his tophat like a boome
 draw_sprite_ext(sOctodisplay0,0,40,240,0.22,0.22,0,c_white,0.5);
 }
 #endregion
+#region Ollie Upgrades & Displays
+//Ollie U0
+if((selected).towertype = "OllieU0") {
+draw_sprite_ext(sPixel,0,80,220,1.5,0.12,0,c_black,0.33);
+draw_text_transformed(80,220,"Upgrade 1: 'Sloth'",0.33,0.33,0);
+draw_text_transformed(80,230,"Not the animal, The sin, She slows the shit for a small moment",0.25,0.25,0);
+draw_sprite_ext(sBdisplay0,0,40,240,0.22,0.22,0,c_white,0.5);
+}
+#endregion
 }
 #endregion
 }
@@ -128,6 +140,13 @@ draw_set_alpha(1);
 draw_set_halign(fa_middle);
 draw_text_transformed(298,42,"Bradley\nPortal Power: 10",0.2,0.2,0);
 draw_set_halign(fa_left);
+//Ollie
+draw_set_alpha(0.5);
+draw_sprite(sTowerOllieU0,0,298,62);
+draw_set_alpha(1);
+draw_set_halign(fa_middle);
+draw_text_transformed(298,70,"Ollie\nPortal Power: 30",0.2,0.2,0);
+draw_set_halign(fa_left);
 }
 #endregion
 
@@ -138,7 +157,8 @@ draw_text_transformed(276,6,"Damage (HP): " + string(damage),0.25,0.25,0);
 draw_set_halign(fa_left);
 #endregion
 
-#region Draw Time
+#region Draw Time & Wave
+draw_text_transformed(42,2,"Current Wave: " + string(w),0.25,0.25,0);
 draw_text_transformed(0,2,"Wave Time: " + string(wtime),0.25,0.25,0);
 #endregion
 

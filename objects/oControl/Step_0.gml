@@ -1,4 +1,4 @@
-/// Step event
+ /// Step event
 
 #region Activate Waves
 if(keyboard_check_pressed(vk_space)) && (active = 0) {
@@ -68,16 +68,15 @@ if(sndmenu = 1) {
 #endregion
 
 #region Tower List
-if(keyboard_check_pressed(ord("T"))) && (sndmenu  = 0) {
+if(keyboard_check_pressed(ord("T"))) && (sndmenu  = 0) && (!keyboard_check(ord("B"))) {
 towerlist++;
 if(towerlist > 1) towerlist = 0; 
 } else if(sndmenu = 1) {	
 }
 
 if(towerlist = 1) {
-		//Secret - Octo
-		if(keyboard_check(ord("G"))) {
-			if(keyboard_check(ord("O"))) {
+#region Secret - Octo
+		if(keyboard_check(ord("G"))) && (keyboard_check(ord("O"))) {
 				if(mouse_check_button_pressed(mb_left)) && (!instance_exists(oTowerOctoU0)) {
 					if(ppower >= 30) {
 					ppower -= 30;
@@ -90,34 +89,55 @@ if(towerlist = 1) {
 					} else {
 					audio_play_sound(sndCancel0,0,false);
 					}
+				}
+			}
+		}
+#endregion
+#region Brent
+		if(mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,292,6,304,14) && (!instance_exists(oTowerPlace)) || (keyboard_check(ord("B"))) && (keyboard_check(ord("T"))) {
+				if(mouse_check_button_pressed(mb_left)) {
+					if(ppower >= 5) {
+					ppower -= 5;
+					audio_play_sound(sndTowerSelect,0,false);
+					var place = instance_create_layer(0,0,"Towers",oTowerPlace);
+						with(place)
+						{
+						tower = oTowerBrentU0;
+						}
 					}
 				}
 			}
-		}
-		//Brent
-		if(mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,292,6,304,14) && (!instance_exists(oTowerPlace)) {
-			if(ppower >= 5) {
-			ppower -= 5;
-			audio_play_sound(sndTowerSelect,0,false);
-			var place = instance_create_layer(0,0,"Towers",oTowerPlace);
-				with(place)
-				{
-				tower = oTowerBrentU0;
+#endregion
+#region Bradley
+		if(mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,292,34,306,45) && (!instance_exists(oTowerPlace)) || (keyboard_check(ord("B"))) && (keyboard_check(ord("Y"))) {
+				if(mouse_check_button_pressed(mb_left)) {
+					if(ppower >= 10) {
+					ppower -= 10;
+					audio_play_sound(sndTowerSelect,0,false)
+					var place = instance_create_layer(0,0,"Towers",oTowerPlace);
+						with(place)
+						{
+						tower = oTowerBradleyU0;
+						}
+					}
 				}
 			}
-		}
-	//Bradley
-		if(mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,292,34,306,45) && (!instance_exists(oTowerPlace)) {
-			if(ppower >= 10) {
-			ppower -= 10;
-			audio_play_sound(sndTowerSelect,0,false)
-			var place = instance_create_layer(0,0,"Towers",oTowerPlace);
-				with(place)
-				{
-				tower = oTowerBradleyU0;
+#endregion
+#region Ollie
+		if(mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,292,62,307,12) && (!instance_exists(oTowerPlace)) || (keyboard_check(ord("O"))) && (keyboard_check(ord("L"))) {
+					if(mouse_check_button_pressed(mb_left)) {
+						if(ppower >= 30) {
+						ppower -= 30;
+						audio_play_sound(sndTowerSelect,0,false);
+						var place = instance_create_layer(0,0,"Towers",oTowerPlace);
+							with(place)
+							{
+							tower = oTowerOllieU0;
+							}
+						}
+					}
 				}
-			}
-		}
+#endregion
 #endregion
 
 #region Upgrades & Tower UI
@@ -127,7 +147,7 @@ if(instance_exists(selected)) {
 #region Brent Upgrades
 //Brent Upgrade 1
 		if((selected).towertype = "BrentU0") && (udb < 1) {
-			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) {	
+			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) || (keyboard_check_pressed(ord("U"))) {	
 				if(ppower >= 10) {
 				udb = 10;
 				audio_play_sound(sndUpgrade0,0,0);	
@@ -142,7 +162,7 @@ if(instance_exists(selected)) {
 		}
 //Brent Upgrade 2
 		if((selected).towertype = "BrentU1") && (udb < 1) {
-			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) {	
+			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) || (keyboard_check_pressed(ord("U"))) {	
 				if(ppower >= 15) {
 				udb = 10;
 				audio_play_sound(sndUpgrade0,0,0);	
@@ -159,7 +179,7 @@ if(instance_exists(selected)) {
 #region Bradley Upgrades
 //Bradley Upgrade 1
 		if((selected).towertype = "BradleyU0") && (udb < 1) {
-			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) {	
+			if(point_in_rectangle(mouse_x,mouse_y,80,220,172,226)) && (mouse_check_button_pressed(mb_left)) || (keyboard_check_pressed(ord("U"))) {	
 				if(ppower >= 15) {
 				udb = 10;
 				audio_play_sound(sndUpgrade0,0,0);	
@@ -178,6 +198,8 @@ if(instance_exists(selected)) {
 		if((selected).towertype = "OctoU0")
 			{
 			}
+#endregion
+#region Ollie Upgrades
 #endregion
 	}
 }

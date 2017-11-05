@@ -4,14 +4,10 @@ x = mouse_x
 y = mouse_y
  
 #region Placing/Cancelling
-	//If Not Placeable (Cause of Not meeting Tower Area)
+	//If Not Placeable
 	if(mouse_check_button_released(mb_left)) && (image_blend = c_red) {
 	audio_play_sound(sndCancel0,0,0);
-	if(tower = oTowerBrentU0) {
 	oControl.ppower += pay;
-	} else if(tower = oTowerBradleyU0) {
-	oControl.ppower += pay;	
-	}
 	instance_destroy();	
 	} else
 	//If Placeable

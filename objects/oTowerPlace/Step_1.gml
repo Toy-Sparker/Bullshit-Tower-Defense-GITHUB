@@ -16,10 +16,18 @@ image_alpha = 0.5;
 sprite_index = sTowerBradleyU0;
 }
 
+//Gentleman Octopus
 if(tower = oTowerOctoU0) {
 pay = 20;
 image_alpha = 0.5;
 sprite_index = sTowerOctoU0_hat
+}
+
+//Bradley
+if(tower = oTowerOllieU0) {
+pay = 30;
+image_alpha = 0.5;
+sprite_index = sTowerOllieU0;
 }
 
 #endregion

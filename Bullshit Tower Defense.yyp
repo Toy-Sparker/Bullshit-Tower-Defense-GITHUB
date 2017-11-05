@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1344b556-09b8-4ac7-b3bc-0150e32b7cef",
+            "Value": {
+                "id": "b4d79acd-18a4-4026-acd4-5e7544bdc323",
+                "resourcePath": "sprites\\sTowerOllieU0\\sTowerOllieU0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "168f4167-ef0d-4420-9bf8-50a0d15ee5c3",
             "Value": {
                 "id": "413be565-6d9b-484a-955e-c30d60d0adc4",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "35357075-6ec8-406f-acc7-5269e0c9646f",
+            "Value": {
+                "id": "c848d4a8-9081-429e-9554-0cc5e14d1abf",
+                "resourcePath": "objects\\oTowerOllieU0\\oTowerOllieU0.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3595c01d-10a8-429a-9baf-bd46acd78f29",
             "Value": {
                 "id": "5584c964-c995-458a-acad-a878396170a4",
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "3b803784-c6c8-4f60-af9d-0a498ca301c0",
+            "Value": {
+                "id": "238edbc2-006b-4241-b32e-0719d2550a43",
+                "resourcePath": "views\\3b803784-c6c8-4f60-af9d-0a498ca301c0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "412997b1-74ee-41f0-b383-2388fa550559",
             "Value": {
                 "id": "f97840ef-b5ec-480e-898b-55851ef77deb",
@@ -284,6 +308,14 @@
                 "id": "d8a0246f-c115-4d9d-8b31-c6d3777d7751",
                 "resourcePath": "objects\\oTowerPlace\\oTowerPlace.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4a8ba4c3-edc6-44c3-aed4-fae8e6aef842",
+            "Value": {
+                "id": "39770ef0-b395-411b-a67d-d7798765bca0",
+                "resourcePath": "scripts\\scrTowerOllieU0_check\\scrTowerOllieU0_check.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -359,6 +391,14 @@
             }
         },
         {
+            "Key": "57740462-641a-4e08-8c08-fdb3f340e4b3",
+            "Value": {
+                "id": "4c3677f8-b346-4cef-a465-5f6e0cd8062c",
+                "resourcePath": "objects\\oOsinTrail\\oOsinTrail.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "579cb164-1f26-4ba3-a27b-b6e006cecf95",
             "Value": {
                 "id": "9ae409db-2be9-46a0-bf14-cecfc2979871",
@@ -428,6 +468,14 @@
                 "id": "f2e203f0-6a39-472a-b0cc-d0ac5fd9def6",
                 "resourcePath": "tilesets\\tileset0\\tileset0.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "6cf1b7da-94e2-4785-bd7c-865a605fca35",
+            "Value": {
+                "id": "73b90872-225a-4789-a678-e003974bbaf8",
+                "resourcePath": "sprites\\sOsin\\sOsin.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -615,6 +663,14 @@
             }
         },
         {
+            "Key": "999eb24b-6153-48c8-94cb-01cdec62dd18",
+            "Value": {
+                "id": "824bdb8e-9ac3-46c0-9954-7fc57c6022ba",
+                "resourcePath": "scripts\\scrTowerOllieU0_attack\\scrTowerOllieU0_attack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9a35e01b-28d6-4ee9-8a5b-b61b6e622f22",
             "Value": {
                 "id": "968af4d5-7e7e-4980-bb92-1d2098a7f28b",
@@ -708,6 +764,14 @@
                 "id": "7ba719d8-6760-4cb2-a367-23f452dca5fb",
                 "resourcePath": "views\\a9ee7f4c-130d-42b9-b4df-0091fd7602ce.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "acecddc7-4eea-4301-bf3b-3af0029284d2",
+            "Value": {
+                "id": "69d1d091-61f7-4447-b6b5-7ae2903b848d",
+                "resourcePath": "scripts\\scrTowerOllieU0_idle\\scrTowerOllieU0_idle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -903,6 +967,14 @@
             }
         },
         {
+            "Key": "db778d15-ecf4-4a66-b560-54baf1df6685",
+            "Value": {
+                "id": "369a3891-8731-49e8-9bc5-bc8c6dd33392",
+                "resourcePath": "objects\\oOsin\\oOsin.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "db96eb88-47e7-4b61-bdc8-7f063e6b8bfb",
             "Value": {
                 "id": "3b0c1029-fa0d-4d4c-95a4-79820deb254f",
@@ -1054,6 +1126,9 @@
         "3a5ee2d1-42f8-4d3e-8ca8-10960815d398",
         "ebd47205-3290-48f7-890e-3843e6ddbfbb",
         "ba4ed80d-b19c-49c4-8f75-75e9aa626b60",
+        "acecddc7-4eea-4301-bf3b-3af0029284d2",
+        "999eb24b-6153-48c8-94cb-01cdec62dd18",
+        "4a8ba4c3-edc6-44c3-aed4-fae8e6aef842",
         "5714a18b-1646-42fa-9f52-ac0fe8d09947",
         "c1fa3484-3b2b-44ad-885a-c49d4649a4bf"
     ],

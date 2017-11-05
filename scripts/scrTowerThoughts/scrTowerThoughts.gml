@@ -1,41 +1,41 @@
 //Tower's Thoughts (Purely Cosmetic and for humorous reasons)
 #region Brent Tower Thoughts 1
 if(towername = "Brent") {
-switch(thought) {
-case 1: thghtstr = "Thinking about the amount of swords he has"; break;
-case 2: thghtstr = "'The scent out here is fucking ungodly'"; break;
-case 3: thghtstr = "'How exactly does shit give us Portal power?'"; break;
-case 4: thghtstr = "Thinking about his accuracy"; break;
-case 5: thghtstr = "Wondering if this thing is meant to be seriously"; break;
-case 6: thghtstr = "'Couldn't they get machines to do this?'"; break;
-case 7: thghtstr = "Thinking about his clones"; break;
-case 8: thghtstr = "Thinking about going home"; break; 
-case 9: thghtstr = "'Tired'"; break;
-case 10: thghtstr = "'This is weirdly fun'"; break;
-case 11: thghtstr = "'Can't tell if this is worse then working'"; break;
-case 12: thghtstr = "He currently has no thoughts... how odd"; break;
-case 13: thghtstr = "Thinking about how far he should be able to\nthrow but can't"; break;
-case 14: thghtstr = "Sad thoughts, Not telling you"; break;
-case 15: thghtstr = "'I don't understand why we need clones'"; break;
-case 16: thghtstr = "'I'm never gonna get sleep'"; break;
-case 17: thghtstr = "'Why I am here...'"; break;
-case 18: thghtstr = "Thinking about what it would be like to be shit"; break;
-case 19: thghtstr = "'Why not send the military?!'"; break;
-case 20: thghtstr = "Thinking about why bradley gets a shotgun"; break;
-case 21: thghtstr = "'This is retarded'"; break;
-case 22: thghtstr = "'Is this hell?'"; break;
-case 23: thghtstr = "Wants to fall sleep"; break;
-case 24: thghtstr = "'I don't know why lauren is involved'"; break;
-case 25: thghtstr = "'Wait... What country is? I don't recognise\nany of this'"; break;
-case 26: thghtstr = "Silent rage"; break;
-case 27: thghtstr = "We're hunting shit... That moves, Try explain that\nto people"; break;
-case 28: thghtstr = "All he can think about is wanting to facepalm"; break;
-case 29: thghtstr = "'I'm surprised to say this but bradley and\nshmatt are probably one of the more useful people here'"; break;
-case 30: thghtstr = "Thinking about Shmatt and his infrasound weapon"; break;
-case 31: thghtstr = "'I'm a bit of a melee person yet they give me\ndaggers and swords to throw'"; break;
-case 32: thghtstr = "Thinking about coding and if statements"; break;
-case 33: thghtstr = "'I don't know if I should honored to told\nto patrol shit or insulted'"; break;
-}
+	switch(thought) {
+	case 1: thghtstr = "Thinking about the amount of swords he has"; break;
+	case 2: thghtstr = "'The scent out here is fucking ungodly'"; break;
+	case 3: thghtstr = "'How exactly does shit give us Portal power?'"; break;
+	case 4: thghtstr = "Thinking about his accuracy"; break;
+	case 5: thghtstr = "Wondering if this thing is meant to be seriously"; break;
+	case 6: thghtstr = "'Couldn't they get machines to do this?'"; break;
+	case 7: thghtstr = "Thinking about his clones"; break;
+	case 8: thghtstr = "Thinking about going home"; break; 
+	case 9: thghtstr = "'Tired'"; break;
+	case 10: thghtstr = "'This is weirdly fun'"; break;
+	case 11: thghtstr = "'Can't tell if this is worse then working'"; break;
+	case 12: thghtstr = "He currently has no thoughts... how odd"; break;
+	case 13: thghtstr = "Thinking about how far he should be able to\nthrow but can't"; break;
+	case 14: thghtstr = "Sad thoughts, Not telling you"; break;
+	case 15: thghtstr = "'I don't understand why we need clones'"; break;
+	case 16: thghtstr = "'I'm never gonna get sleep'"; break;
+	case 17: thghtstr = "'Why I am here...'"; break;
+	case 18: thghtstr = "Thinking about what it would be like to be shit"; break;
+	case 19: thghtstr = "'Why not send the military?!'"; break;
+	case 20: thghtstr = "Thinking about why bradley gets a shotgun"; break;
+	case 21: thghtstr = "'This is retarded'"; break;
+	case 22: thghtstr = "'Is this hell?'"; break;
+	case 23: thghtstr = "Wants to fall sleep"; break;
+	case 24: thghtstr = "'I don't know why lauren is involved'"; break;
+	case 25: thghtstr = "'Wait... What country is? I don't recognise\nany of this'"; break;
+	case 26: thghtstr = "Silent rage"; break;
+	case 27: thghtstr = "We're hunting shit... That moves, Try explain that\nto people"; break;
+	case 28: thghtstr = "All he can think about is wanting to facepalm"; break;
+	case 29: thghtstr = "'I'm surprised to say this but bradley and\nshmatt are probably one of the more useful people here'"; break;
+	case 30: thghtstr = "Thinking about Shmatt and his infrasound weapon"; break;
+	case 31: thghtstr = "'I'm a bit of a melee person yet they give me\ndaggers and swords to throw'"; break;
+	case 32: thghtstr = "Thinking about coding and if statements"; break;
+	case 33: thghtstr = "'I don't know if I should honored to told\nto patrol shit or insulted'"; break;
+	}
 }
 #endregion
 
@@ -116,5 +116,45 @@ if(towername = "Gentleman Octo") {
 	case 32: thghtstr = "'R.I.P My gaming channel'";
 	case 33: thghtstr = "'Is this real life?'"; break;
 }
+}
+#endregion
+
+#region Ollie Tower Thoughts 1
+if(towername = "Ollie") {
+	switch(thought) {
+	case 1: thghtstr = "Wants to die"; break;
+	case 2: thghtstr = "Thinking about sleeping in for most of her life"; break;
+	case 3: thghtstr = "'I blame this on my life choices'"; break;
+	case 4: thghtstr = "'Why the fuck does shit move?!'"; break;
+	case 5: thghtstr = "'I wish I was the devil'"; break;
+	case 6: thghtstr = "Thinking about drawing"; break;
+	case 7: thghtstr = "Thinking about sirsh's great art"; break;
+	case 8: thghtstr = "'Fuck life...'"; break;
+	case 9: thghtstr = "'Thy poop shall be sinned'"; break;
+	case 10: thghtstr = "'am sad'"; break;
+	case 11: thghtstr = "'God is ded'"; break;
+	case 12: thghtstr = "Wondering why no one is questioning her sin abilities"; break;
+	case 13: thghtstr = "Wants to go home"; break;
+	case 14: thghtstr = "'Well... It's better then school'"; break;
+	case 15: thghtstr = "'sneeeeeeze...'"; break;
+	case 16: thghtstr = "'yeet my meat...'"; break;
+	case 17: thghtstr = "'wowza...'"; break;
+	case 18: thghtstr = "Thinking about her regrets"; break;
+	case 19: thghtstr = "Wondering if the shit is sentient"; break;
+	case 20: thghtstr = "Wondering if the shit feels pain"; break;
+	case 21: thghtstr = "ANIXETY INTENSIFIES"; break;
+	case 22: thghtstr = "'I think I shat myself, says Shmatt'"; break;
+	case 23: thghtstr = "' :^( '"; break;
+	case 24: thghtstr = "'ke'"; break;
+	case 25: thghtstr = "'bloupas...'"; break
+	case 26: thghtstr = "'this situation is pretty dank'"; break;
+	case 27: thghtstr = "Wants to be productive but can't because shit"; break;
+	case 28: thghtstr = "Thinking about rubbish and trash"; break;
+	case 29: thghtstr = "'Bloons tower defense is better'"; break;
+	case 30: thghtstr = "Thinking about what it would look like in hell"; break;
+	case 31: thghtstr = "'Apparently the sun decided to stop moving'"; break;
+	case 32: thghtstr = "'Wasn't it getting hotter if the sun isn't moving?'"; break;
+	case 33: thghtstr = "'I'm gonna kms'"; break;
+	}
 }
 #endregion
